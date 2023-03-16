@@ -1,0 +1,35 @@
+div {
+    display: flex;
+    flex-grow: 1 1 0;
+    justify-content: center;
+}
+
+button {
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+}
+
+p {
+    color: #3E3E3C;
+    font-size: x-large;
+}
+
+#rock {
+    background-color: #5A4D41;
+}
+
+#paper {
+    background-color: #E0C9A6;
+    color: #3E3E3C;
+}
+
+#scissors {
+    background-color: #3E3E3C;
+}
