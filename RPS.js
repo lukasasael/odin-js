@@ -17,7 +17,6 @@ function getComputerChoice() {
 
 function playRound(playerSelection, result) {
     if (p1 === 5 || p2 === 5) {
-        console.log(p1, p2);
         result = ("Final Result: " + p1 + "-" + p2);
         resulttxt.textContent = result;
         p1 > p2 ? finalresulttxt.textContent = ("You Won the game!") : (p1 == p2 ? finalresulttxt.textContent = ("Game was a tie!") : finalresulttxt.textContent = ("You Lost the game!"));
@@ -59,13 +58,9 @@ function playRound(playerSelection, result) {
 }
 
 function game() {
-    //for (let i = 0; i < 5; i++) {
     rock.addEventListener("click", () => { playRound("rock", result) });
     paper.addEventListener("click", () => playRound("paper", result));
-    scissors.addEventListener("click", () => playRound("scissors", result));
-    //playerSelection = prompt();
-    //playRound(playerSelection, computerSelection, result);
-    //}
+    scissors.addEventListener("click", () => playRound("scissors", result)); 
 }
 
 game();
